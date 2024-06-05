@@ -1,0 +1,277 @@
+header.header 
+	._header-wrapper 
+		._top-menu-fixed
+			._top-menu
+				._column 
+					button._button-sidebarcatalog
+						+iconfont('search', '_icon')
+					.main-menu
+						ul._body
+							li 
+								a(href="@@webRoot/index.html" title="Главная")._link._lnb Главная
+							li 
+								a(href="@@webRoot/catalog.html" title="О магазине")._link._lnb Каталог
+							li 
+								a(href="@@webRoot/catalog/information-work.html" title="Как купить")._link._lnb Как купить
+							li 
+								a(href="#" title="Оплата")._link._lnb Оплата
+							li 
+								a(href="#" title="Доставка")._link._lnb Доставка
+							li 
+								a(href="@@webRoot/404.html" title="Скидки")._link._lnb Скидки
+				._column.bp-1
+				._column 
+					.service-menu
+						._body
+							._column
+									a(href="@@webRoot/catalog/cart.html")._link
+										+iconfont('shopping-cart', '_icon')
+										span._text
+											| Моя корзина 
+										span._value-cart (0)  
+									a(href="@@webRoot/favourites.html")._link
+										+iconfont('heart', '_icon')
+										span._text
+											| Избранное 
+										span._value-favourites (0) 
+							._column
+									a(href="#contacts").anchor-link 
+										span._link Контакты 
+					button._button-menu
+						include ../chunk/burger-button 
+			._middle-menu
+				._column
+					.middle-menu
+						._body
+							.logo-container(data-move-el="[{'bp-max': 690.98, 'index': 1, 'target': '.bp-1'}]")
+								._brand
+									img(src="@@webRoot/img/icons/brand.png", alt="brand")
+								._image
+									img(src="@@webRoot/img/header/logo-header.png", alt="logo")
+							include ../chunk/search 
+				._column
+					.login-container
+						._body
+							._login(data-move-el="[{'bp-max': 690.98, 'index': 1, 'target': '.bp-7'}]")
+								._user-button
+									+iconfont('user-check', '_icon')
+								._list
+									button(type="button")._link Личный кабинет
+									button(type="button")._link.login Войти 
+									span /
+									button(type="button")._link.registrations Регистриция 
+								include ../chunk/login-form
+							._phone
+								a(href="tel:88000000000") 8-800-000-00-00 
+		nav.menu-bottom._menu-bottom 
+			ul._list
+				li._list-item
+					a(href="#")._link 
+						span Ткани 
+						+iconfont("arow-left", 'arow-down')
+					ul._sub-menu
+						li
+							a(href="#") меню второго уровня
+						li
+							a(href="#")
+								| меню второго уровня
+								+iconfont("arow-right", 'arow-right') 
+							ul._sub-menu
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+						li
+							a(href="#")._sub-link
+								| меню второго уровня 
+								+iconfont("arow-right", 'arow-right')
+							ul._sub-menu
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+						li
+							a(href) меню второго уровня
+				li._list-item
+					a(href="#")._link
+						span Швейная фурнитура 
+						+iconfont("arow-left", 'arow-down')
+					ul._sub-menu
+						li
+							a(href="#") меню второго уровня
+						li
+							a(href="#")
+								| меню второго уровня
+								+iconfont("arow-right", 'arow-right') 
+							ul._sub-menu
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+						li
+							a(href="#")._sub-link
+								| меню второго уровня 
+								+iconfont("arow-right", 'arow-right')
+							ul._sub-menu
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+						li
+							a(href) меню второго уровня
+				li._list-item
+					a(href="#")._link
+						span Товары для рукоделия 
+						+iconfont("arow-left", 'arow-down')
+					ul._sub-menu
+						li
+							a(href="#") меню второго уровня
+						li
+							a(href="#")
+								| меню второго уровня
+								+iconfont("arow-right", 'arow-right') 
+							ul._sub-menu
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+						li
+							a(href="#")._sub-link
+								| меню второго уровня 
+								+iconfont("arow-right", 'arow-right')
+							ul._sub-menu
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+						li
+							a(href) меню второго уровня
+				li._list-item
+					a(href="#")._link
+						span Пряжа 
+						+iconfont("arow-left", 'arow-down')
+					ul._sub-menu
+						li
+							a(href="#") меню второго уровня
+						li
+							a(href="#")
+								+iconfont("arow-left", 'arow-left') 
+								| меню второго уровня
+							ul._sub-menu
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+						li
+							a(href="#")._sub-link
+								+iconfont("arow-left", 'arow-left') 
+								| меню второго уровня 
+							ul._sub-menu
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+						li
+							a(href) меню второго уровня
+				li._list-item
+					a(href="#")._link
+						span Новинки 
+						+iconfont("arow-left", 'arow-down')
+					ul._sub-menu
+						li
+							a(href="#") меню второго уровня
+						li
+							a(href="#")._sub-link
+								+iconfont("arow-left", 'arow-left')
+								| меню второго уровня 
+							ul._sub-menu
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+						li
+							a(href="#")._sub-link
+								+iconfont("arow-left", 'arow-left')
+								| меню второго уровня 
+							ul._sub-menu
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+						li
+							a(href) меню второго уровня
+				li._list-item
+					a(href="#")._link
+						span Акции 
+						+iconfont("arow-left", 'arow-down')
+					ul._sub-menu 
+						li
+							a(href="#") меню второго уровня
+						li
+							a(href="#")._sub-link
+								+iconfont("arow-left", 'arow-left')
+								| меню второго уровня 
+							ul._sub-menu
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+						li
+							a(href="#")._sub-link
+								+iconfont("arow-left", 'arow-left')
+								| меню второго уровня 
+							ul._sub-menu
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+								li
+									a(href) меню третьего уровня
+						li
+							a(href) меню второго уровня
